@@ -3,6 +3,7 @@
 $colFondo1: #ffffff;
 $colFondo2: #c5d5f9;
 $colFondo3: #3a8bff;
+$colFondo4: #000835;
 
 //Título
 
@@ -37,7 +38,7 @@ $colParraf3: #000521;
 
 $sizeTextBot: 18px;
 $weightTextBot: 600px;
-$radioBot: 10px;
+$radioBot: 8px;
 
 //opcion1
 $colBoton1: #3a8bff;
