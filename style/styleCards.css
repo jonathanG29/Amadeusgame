@@ -19,10 +19,6 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    -webkit-box-shadow: 18px 14px 0px 2px #3a8bff;
-    -moz-box-shadow: 18px 14px 0px 2px #3a8bff;
-    box-shadow: 18px 14px 0px 2px #3a8bff;
-
 }
 
 .titulo {
@@ -97,9 +93,9 @@ body{
 
 .card .front{
     transform: perspective(600px) rotateY(0deg);
-    -webkit-box-shadow: 18px 14px 0px 2px #3a8bff;
-    -moz-box-shadow: 18px 14px 0px 2px #3a8bff;
-    box-shadow: 18px 14px 0px 2px #3a8bff;
+    -webkit-box-shadow: 18px 14px 0px 2px #c5d5f9;
+    -moz-box-shadow: 18px 14px 0px 2px #c5d5f9;
+    box-shadow: 18px 14px 0px 2px #c5d5f9;
 
 }
 
@@ -160,18 +156,22 @@ body{
 .navegacion ul{
     list-style: none;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .navegacion ul li{
     display:inline-flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
     
 }
 
 .navegacion ul li a{
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
     padding: 15px 15px;
     color: #000835;
     text-decoration: none;
@@ -183,9 +183,10 @@ body{
             color: #c5d5f9;
             background-color: #3a8bff;
         }
-
+    /*pendiente por revisar*/
     &[active]{
-        background-color: #3a8bff;
+        background-color: #3a8bff; 
+        
     }
 
     &::before{
@@ -224,7 +225,4 @@ button{
 button:hover{
     color: #c5d5f9;
     background-color: #3a8bff;
-    box-shadow: -2px 1px 88px 14px #353ab3bf;
-    -webkit-box-shadow: -2px 1px 88px 14px #353ab3bf;
-    -moz-box-shadow: -2px 1px 88px 14px #353ab3bf;
 }
