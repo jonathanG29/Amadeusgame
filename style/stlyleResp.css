@@ -108,6 +108,14 @@
     color: #c5d5f9;
 }
 
+@media screen and (max-width: 767px) {
+
+  .conteiner--resumen{
+    justify-content: center;
+    margin-left: 10px;
+  }
+}
+
 .resumen__preguntas {
     display: flex;
     flex-direction: column;
@@ -151,6 +159,13 @@
   .resumen__respuestas__item{
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .resumen__imagen{
+    display: none;
   }
 }
 

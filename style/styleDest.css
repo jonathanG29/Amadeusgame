@@ -120,7 +120,9 @@
 .opcion__imagen img {
   max-width: 100%;
   max-height: 100%;
-  width: 500px;
+  object-fit: cover;
+  width: 900px;
+  height: 900px;
 }
 
 .overlay {
@@ -152,8 +154,8 @@
   transform: translate(-50%, -50%);
   text-align:left;
   display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 10px;
+  grid-template-columns: 40% 60%;
+  gap: 5px;
 }
 
 @media screen and (max-width: 767px) {
