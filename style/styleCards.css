@@ -8,16 +8,24 @@
 body{
     background-color: #fff;
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content:center;
 }
 
 .container__general{
-    width: 85%;
-    height: 85%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 85%; 
+    height: 85%; 
     background-color: #000835;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 3%;
+    padding: 25px 5px;
+    /* position: absolute; */
+    /* top: 10%; */
+    /* left: 20%; */
+    /* transform: translate(-50%, -50%); */
 
 }
 
@@ -26,8 +34,8 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    font-size: 20px;
-    margin: 30px;
+    font-size: 16px;
+    margin: 20px;
     color: #fff;
 }
 
@@ -149,11 +157,14 @@ body{
 }
 
 .navegacion {
-    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 10px 20px 10px;
     height: 50px;
 }
 
-.navegacion ul{
+.navegacion ul {
     list-style: none;
     text-align: center;
     display: flex;
@@ -163,10 +174,8 @@ body{
 }
 
 .navegacion ul li{
-    display:inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
+    border-radius: 10px;
+
 }
 
 .navegacion ul li a{
@@ -179,17 +188,18 @@ body{
     border-radius: 10px;
     position: relative;
     
-    &:hover{
+    &:hover{ 
             color: #c5d5f9;
             background-color: #3a8bff;
-        }
-    /*pendiente por revisar*/
-    &[active]{
-        background-color: #3a8bff; 
+    }  
+
+    &[active] {
+        color: #c5d5f9;
+        background-color:#3a8bff;
         
     }
-
-    &::before{
+    
+    &::before{ 
         content: url(../img/aeronave.png);
         position:absolute;
         bottom: 70px;
@@ -203,7 +213,8 @@ body{
 
     &.selected::before{
         opacity: 1;
-    }
+    } 
+    
 }
 
 .botones {
@@ -216,9 +227,10 @@ body{
 button{
     border-radius: 8px;
     font-size: 18px;
-    width: 150px;
-    height: 30px;
+    width: auto;
+    height: auto;
     color: #000835;
+    padding: 5px 10px;
     
 }
 
@@ -226,3 +238,37 @@ button:hover{
     color: #c5d5f9;
     background-color: #3a8bff;
 }
+
+@media screen and(max-width:767px){
+    body{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .botones{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    body{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
