@@ -83,6 +83,7 @@
 
 .conteiner{
     height: 80vh;
+    width: 100%;
     margin-top: 10vh;
     margin-bottom: 10vh;
     background-color: #000835;
@@ -93,36 +94,42 @@
 }
 
 .conteiner__titulo {
-    text-align: center;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
 }
 
-    .conteiner--resumen{
-    /* background-color: #000835; */
-    /* background-image: url(../img/mensaje.png);
-    background-size:600px 400px;
-    background-position: center;
-    background-clip: content-box;
-    background-repeat: no-repeat; */
+.conteiner--resumen{
+    height: 70vh;
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-evenly;
     color: #c5d5f9;
-    
+}
+
+@media screen and (max-width: 767px) {
+
+  .conteiner--resumen{
+    justify-content: center;
+    margin-left: 10px;
+  }
 }
 
 .resumen__preguntas {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    justify-content: space-between;
-    margin-top: 20px;
-    
+    justify-content: space-evenly;
+}
+
+.resumen__respuestas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .resumen__preguntas__item{
-    height: 50px;
-    padding: 0 10px;
+    padding: 10px 10px;
     font-weight: 600;
     background-color: #c5d5f9;
     color: #000835;
@@ -130,19 +137,36 @@
     align-items: center;
 }
 
-.resumen__respuestas {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: space-between;
-    margin-top: 20px;
-   
-}
 
 .resumen__respuestas__item{
-    height: 50px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .resumen__respuestas{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .resumen__respuestas__item{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .resumen__imagen{
+    display: none;
+  }
 }
 
 .fa-plane-up{
@@ -160,6 +184,7 @@
 }
 
 .conteiner__botones{
+    height: 15vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -168,8 +193,9 @@
 button{
     border-radius: 8px;
     font-size: 18px;
-    width: 150px;
-    height: 30px;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
     color: #000835;
 }
 

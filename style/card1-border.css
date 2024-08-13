@@ -1,0 +1,66 @@
+* {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+}
+
+/*  --- INICIO --- container__header  */
+.container__header                      {border: 1px solid red;}
+.container__header--logo                {border: 1px solid red;
+        & img                           {border: 1px solid green}
+                                        }
+.container__header--navigation          {border: 1px solid red;
+        & ul                            {border: 1px solid green;
+        & li                            {border: 1px solid blue;}
+                                        }                        }
+.container__header--search              {border: 1px solid red;
+        & input                         {border: 1px solid green};
+        & button                        {border: 1px solid blue};
+                                        }
+/*  --- FIN --- container__header  */
+
+
+/*  --- INICIO --- Container__main  */
+.container__main                        {border: 1px solid red;}
+.container__main__card                  {border: 1px solid yellow; border-radius: 0px;}
+.container__main__card__avatar          {border: 1px solid cyan;}
+.container__main__card__avatar--img     {border: 1px solid red;
+        & img                           {border: 1px solid white;}
+                                        }
+.container__main__card__select          {border: 1px solid khaki;}
+.container__main__card__dot             {border: 1px solid red;}
+.dot                                    {border: 1px solid red;}
+.prev                                   {border: 1px solid red;}
+.next                                   {border: 1px solid red;}
+.text                                   {border: 1px solid red;}
+.active                                 {border: 1px solid green;}
+.fade                                   {border: 1px solid red;}
+.container__main__card__data            {border: 1px solid red;}
+.container__main__card__data--input     {border: 1px solid red;}
+.container__main__card__data--button    {border: 1px solid red;}
+.container__main__card__info            {border: 1px solid red;}
+.container__main__card__info--h2        {border: 1px solid red;}
+.container__main__card__info--p         {border: 1px solid red;}
+/*  --- FIN --- Container__main  */
+
+
+/*  --- INICIO --- Container__footer  */
+.container__footer                      {border: 1px solid red;}
+.container__footer--logo                 {border: 1px solid red;
+        & img                           {border: 1px solid green}
+                                        }
+/*  --- FIN --- Container__footer  */
+
+
+/*  --- INICIO --- Estilos Button  */
+.buttonBG--dark                         {border: 1px solid red;
+        &:hover                         {border: 1px solid green;}
+        &:active                        {border: 1px solid blue;}
+                                        } 
+
+.buttonBG--light                        {border: 1px solid red;
+        &:hover                         {border: 1px solid green;}
+        &:active                        {border: 1px solid blue;}
+                                        } 
+/*  --- FIN --- Estilos Button  */
+
