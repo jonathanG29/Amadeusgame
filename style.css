@@ -1,99 +1,199 @@
-/* para el avatar */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
 }
 
-h1{
-    /* color: white; */
-    font-size: 36px;
-    text-align: center;
-    color: white;
+:root{
+    --main-color: #3a8bff;
+    --white-color: #FEFEFF; 
+    --parrafo-color: #000835;
+    --fondo-color: #c5d5f9;
 }
 
-h2{
-    color: black;
-    font-size: 36px;
-    text-align: center;
+
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--parrafo-color);
 }
 
-p {
-    color: #666;
-    line-height: 1.5;
+.nav__logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
 }
 
-label{
-    color: white;
+.nav__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    
+    
+}
+
+.nav__lista li{
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.nav__lista li a {
+    text-decoration-line: none;
+    color: var(--parrafo-color);
+    font-size: 1.25em;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+
+.nav__lista li a:hover{
+    background-color: var(--fondo-color) ;
+    padding: 5px;
+}
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height: 90vh;
+    background-color: var(--main-color);
 }
 
 .container{
-    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
     width: 100%;
+}
+
+.play{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    background-color: blue;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--parrafo-color);
+    position: relative;
+    background: url(./img/tiera.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.titulo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* text-decoration: none; */
+/* .play img{
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+} */
+
+.play button{
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
 }
 
-.titulo button{
-    padding: 10px;
-    text-decoration: none;
-    border-bottom: 0px;
-    background-color: blue ;
-    color: white;
-    border-radius: 10px;
-    margin: 20px;
+.play button:hover{
+    background-color: var(--parrafo-color);
 }
 
-.img__avatar img{
-    border-radius: 60px;
+
+.nosotros{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 15px;
-    /* height: 80px; */
+    padding: 15px;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--parrafo-color);
+    color: var(--white-color);
 }
 
-.data{
-    display: flex;
-    flex-direction: column;
-}
+@media screen and (max-width: 730px){
 
-.data input{
-    text-decoration: none;
-    border-radius: 6px;
-    border: 1px solid;
-}
+    header nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--white-color);
+        top: 0;
+        width: 100%;
+        border-bottom: 1px solid var(--parrafo-color);
+    }
 
-.data_button{
-    padding: 6px;
-    border-radius: 4px;
-    background-color: rgb(0, 255, 221);
-    color: black;
-    /* text-decoration: none; */
-    outline: none;
-}
+    .nav__logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
 
-.button_aventura button{
-    padding: 10px 20px;
-    background-color:rgb(0, 255, 221);;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
+    .nav__lista{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .padre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        width: 100%;
+        height: 90vh;
+        background-color: var(--main-color);
+    }
+
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .container img{
+        width: 50%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .play{
+        height: 35vh;
+    }
 }
