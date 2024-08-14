@@ -1,0 +1,29 @@
+
+.container__main__card          {
+    display: grid;
+
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 48px;
+
+    grid-template-areas: 
+    'gridAvatar gridData'
+    'gridSelect gridData';
+}
+.container__main__card__avatar  {grid-area: gridAvatar;}
+.container__main__card__select  {grid-area: gridSelect;}
+.container__main__card__data    {grid-area: gridData;}
+
+@media screen and (max-width: 801px) {
+
+    .container__main__card {
+        display: grid;
+
+        grid-template-columns: 400px;
+        grid-template-rows: 400px 48px auto;
+        
+        grid-template-areas: 
+        'gridAvatar'
+        'gridSelect'
+        'gridData';
+    }
+}
